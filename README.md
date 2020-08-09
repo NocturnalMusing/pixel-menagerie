@@ -82,8 +82,6 @@ _The **Pixel Menagerie** MVP consists of functioning authentication for users, a
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
@@ -117,6 +115,7 @@ src
 | Pet Image | functional | n | y | _The image will be an enlarged version of the selected pet icon._ |
 | Pet About | functional | y | n | _The about component will consist of input fields for the user to edit and save._ |
 | Button | functional | n | y | _The button will be used for the login, sign up, edit and release buttons._ |
+
 
 #### Time Estimates
 
@@ -161,8 +160,8 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+- TBA
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+- TBA
