@@ -20,7 +20,7 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_Welcome to the **Pixel Menagerie**, a friendly little site where you can adopt some strange creatures to call your own. Sign up and choose the pets you want, name them, and tell us about their personality! Maybe they've got a weird backstory? It's up to you!_
 
 
 <br>
@@ -45,15 +45,12 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Ruby      | _Lorem ipsum dolor sit amet, consectetur._ |
+|  Ruby on Rails  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
 
@@ -115,11 +112,14 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Header    | functional |   n   |   y   | _The header will contain the navigation and login fields._               |
+|  Footer  | functional |   n   |   n   | _The footer includes website credits and contact information._       |
+|   Sign Up    |   class    |   y   |   n   | _The sign-up field will allow users to create an account._      |
+| Pet Array | functional |   n   |   y   | _The cards will render the post info via props._                 |
+|    Pet List    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+| Pet Image | n | y | _The image will be an enlarged version of the selected pet icon._ |
+| Pet About | y | n | _The about component will consist of input fields for the user to edit and save._ |
+| Button | n | y | _The button will be used for the login, sign up, edit and release buttons._ |
 
 #### Time Estimates
 
