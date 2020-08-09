@@ -1,8 +1,4 @@
-# PIXEL MENAGERIE <!-- omit in toc -->
-
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
+# PIXEL MENAGERIE 
 
 - [Overview](#overview)
 - [MVP](#mvp)
