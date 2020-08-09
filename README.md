@@ -54,11 +54,9 @@ _The **Pixel Menagerie** MVP consists of functioning authentication for users, a
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+![https://res.cloudinary.com/nocturnalmusing/image/upload/v1596998147/Pixel%20Menagerie/Wireframes_go5fbg.png](url)
 
-![Dummy Link](url)
-
-- Desktop Landing
+- Wireframes and Site Flow
 
 ![Dummy Link](url)
 
@@ -143,6 +141,7 @@ src
 
 ## Post-MVP
 
+> Add a pop-up on the 'release' button explaining you're about to return your pet to the wild and asking for confirmation.
 > Add one to two line 'descriptions' for the pets. Example; _"You're pretty sure it's a normal cat, but it's hard to tell. Oh well, it probably likes fish anyway."_
 > Upon selecting a pet on the adoption page, a card appears with the description and a "take home?" button.
 > A starter pet screen appears after you sign up, with three randomly generated pets from the pet-list. 
