@@ -107,7 +107,7 @@ src
 |    Header    | functional |   n   |   y   | _The header will contain the navigation and login fields._               |
 |  Footer  | functional |   n   |   n   | _The footer includes website credits and contact information._       |
 |   Sign Up    |   functional    |   y   |   n   | _The sign-up field will allow users to create an account._      |
-| Pet Array | functional |   n   |   y   | _The cards will render the post info via props._                 |
+| Pet Array | functional |   n   |   y   | _The pet array will be visible on the user screen._                 |
 |    Pet List    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
 | Pet Image | functional | n | y | _The image will be an enlarged version of the selected pet icon._ |
 | Pet About | functional | y | n | _The about component will consist of input fields for the user to edit and save._ |
