@@ -120,15 +120,21 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Create BE Tables |    H     |     3 hrs      |     TBD     |     TBD     |
+| Create Authentication Actions |    H     |     1 hrs      |     TBD     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     TBD     |     TBD     |
+| Create Needed Screens |    H     |     1 hrs      |     TBD     |     TBD     |
+| Create Header, Footer, & Button Components |    H     |     1 hrs      |     TBD     |     TBD     |
+| Create SignUp Component |    H     |     1 hrs      |     TBD     |     TBD     |
+| Create PetsArray and PetList Components |    H     |     3 hrs      |     TBD     |     TBD     |
+| Populate Landing, Sign Up, Adopt and User Screens |    H     |     3 hrs      |     TBD     |     TBD     |
+| Create PetDetail and PetEdit Screens |    H     |     3 hrs      |     TBD     |     TBD     |
+| Desktop Styling |    H     |     3 hrs      |     TBD     |     TBD     |
+| Tablet Styling |    H     |     3 hrs      |     TBD     |     TBD     |
+| Mobile Styling |    H     |     3 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     28 hrs      |     TBD     |     TBD     |
 
 <br>
 
