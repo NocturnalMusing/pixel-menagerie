@@ -147,7 +147,11 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+> Add one to two line 'descriptions' for the pets. Example; _"You're pretty sure it's a normal cat, but it's hard to tell. Oh well, it probably likes fish anyway."_
+> Upon selecting a pet on the adoption page, a card appears with the description and a "take home?" button.
+> A starter pet screen appears after you sign up, with three randomly generated pets from the pet-list. 
+> A feeding system, with a hunger bar and shop through which to obtain food.
+> Add games an a currency system. ( Off-brand duck hunt, maybe? )
 
 ***
 
