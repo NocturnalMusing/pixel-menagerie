@@ -27,19 +27,15 @@ _Welcome to the **Pixel Menagerie**, a friendly little site where you can adopt 
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Pixel Menagerie** MVP consists of functioning authentication for users, allowing a personalized experience through the selection of images ( 'pets' ) with unique input fields for personal use._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Use authentication to implement users._
+- _Create three tables and join them with associations. ( Users to Pets; one to many - Species to Pets; one to many )_
+- _Use CRUD to allow pet personalization, attached to a user profile._
 
 <br>
 
