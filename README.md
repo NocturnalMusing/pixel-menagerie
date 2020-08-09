@@ -54,29 +54,25 @@ _The **Pixel Menagerie** MVP consists of functioning authentication for users, a
 
 #### Wireframes
 
-![https://res.cloudinary.com/nocturnalmusing/image/upload/v1596998147/Pixel%20Menagerie/Wireframes_go5fbg.png](url)
+![All Wireframes](https://res.cloudinary.com/nocturnalmusing/image/upload/v1596998147/Pixel%20Menagerie/Wireframes_go5fbg.png)
 
-- Wireframes and Site Flow
+- All available views with indicated site flow.
 
-![Dummy Link](url)
+![Desktop View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/f270114cf0e1e692a2272ef5e2fb6a16?sortField=uploadedAt)
 
-- Desktop Hero
+- Screens for the desktop view
 
-![Dummy Link](url)
+![Tablet View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/8b499cb2d70a3099e379f0fd7eebc349)
 
-- Resource Index
+- Screens for the tablet view
 
-![Dummy Link](url)
+![Mobile View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/6286b28e337bea97ddc2b2a25cb37795)
 
-- Resource Show
+- Screens for the mobile view ( currently missing menu screen )
 
-![Dummy Link](url)
+![FontAwesome](https://fontawesome.com/)
 
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+- All icon and pet images will be sourced from Font Awesome.
 
 #### Component Tree
 
