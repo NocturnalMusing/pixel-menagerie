@@ -58,19 +58,19 @@ _The **Pixel Menagerie** MVP consists of functioning authentication for users, a
 
 - All available views with indicated site flow.
 
-![Desktop View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/f270114cf0e1e692a2272ef5e2fb6a16?sortField=uploadedAt)
+[Desktop View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/f270114cf0e1e692a2272ef5e2fb6a16?sortField=uploadedAt)
 
 - Screens for the desktop view
 
-![Tablet View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/8b499cb2d70a3099e379f0fd7eebc349)
+[Tablet View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/8b499cb2d70a3099e379f0fd7eebc349)
 
 - Screens for the tablet view
 
-![Mobile View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/6286b28e337bea97ddc2b2a25cb37795)
+[Mobile View](https://cloudinary.com/console/c-6d104373777f1bf143f4f40386ed59/media_library/folders/6286b28e337bea97ddc2b2a25cb37795)
 
 - Screens for the mobile view ( currently missing menu screen )
 
-![FontAwesome](https://fontawesome.com/)
+[FontAwesome](https://fontawesome.com/)
 
 - All icon and pet images will be sourced from Font Awesome.
 
