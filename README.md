@@ -76,7 +76,7 @@ _The **Pixel Menagerie** MVP consists of functioning authentication for users, a
 
 #### Component Tree
 
-![Component Tree](url)
+![Component Tree](https://res.cloudinary.com/nocturnalmusing/image/upload/v1597000381/Pixel%20Menagerie/pixel-menagerie_component_map_lvdilq.png)
 
 - Preliminary structure of components
 
@@ -87,20 +87,25 @@ _The **Pixel Menagerie** MVP consists of functioning authentication for users, a
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Footer.jsx
+      |__ Button.jsx
+      |__ PetsArray.jsx
+      |__ PetsList.jsx
+      |__ SignUp.jsx
+      |__ PetImage.jsx
+      |__ PetAbout.jsx
 |__ services/
+      |__ api-helper.js
+      |__ auth.js
+      |__ species.js
+      |__ pets.js
 
 ```
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
