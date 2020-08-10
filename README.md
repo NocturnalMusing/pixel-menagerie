@@ -110,8 +110,8 @@ src
 |    Header    | functional |   n   |   y   | _The header will contain the navigation and login fields._               |
 |  Footer  | functional |   n   |   n   | _The footer includes website credits and contact information._       |
 |   Sign Up    |   functional    |   y   |   n   | _The sign-up field will allow users to create an account._      |
-| Pet Array | functional |   n   |   y   | _The pet array will be visible on the user screen._                 |
-|    Pet List    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+| Menagerie | functional |   n   |   y   | _The menagerie is shown on the adoption zone page._                 |
+|    Pet List    | functional |   n   |   n   | _The pet list will display on a user's page._ |
 | Pet Image | functional | n | y | _The image will be an enlarged version of the selected pet icon._ |
 | Pet About | functional | y | n | _The about component will consist of input fields for the user to edit and save._ |
 | Button | functional | n | y | _The button will be used for the login, sign up, edit and release buttons._ |
@@ -142,6 +142,8 @@ src
 #### ERD Model
 
 ![ERD](https://res.cloudinary.com/nocturnalmusing/image/upload/v1597003468/Pixel%20Menagerie/pixel_menagerie_ERD_iawevq.png)
+
+- There is a join table here that I forgot to implement on this ERD.
 
 <br>
 
