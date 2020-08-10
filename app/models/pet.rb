@@ -1,4 +1,4 @@
 class Pet < ApplicationRecord
   belongs_to :user
-  has_one :species 
+  belongs_to :species 
 end
