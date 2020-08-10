@@ -1,0 +1,2 @@
+  [1m[35m (393.0ms)[0m  [1m[35mCREATE DATABASE "pixel_menagerie_development" ENCODING = 'unicode'[0m
+  [1m[35m (169.0ms)[0m  [1m[35mCREATE DATABASE "pixel_menagerie_test" ENCODING = 'unicode'[0m
