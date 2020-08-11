@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :species, only: :index
+  resources :species, #only: :index
   resources :pets
   resources :users, only: :create
   post '/auth/login', to: 'authentication#login'
