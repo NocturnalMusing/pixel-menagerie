@@ -16,7 +16,7 @@ class PetsController < ApplicationController
 
   # POST /pets
   def create
-    @pet = Pet.new(food_params)
+    @pet = Pet.new(pet_params)
     @pet.user = @current_user
 
     if @pet.save

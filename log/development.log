@@ -330,3 +330,19 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/pets" for ::1 at 2020-08-11 15:49:57 -0400
+  
+SyntaxError (/Users/morgana/general_assembly/Unit_4/week_12/project_4/pixel-menagerie/config/routes.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  resources :pets
+            ^):
+  
+config/routes.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+config/routes.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+Started GET "/pet" for ::1 at 2020-08-11 15:50:22 -0400
+  
+SyntaxError (/Users/morgana/general_assembly/Unit_4/week_12/project_4/pixel-menagerie/config/routes.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+  resources :pet
+            ^):
+  
+config/routes.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
+config/routes.rb:3: syntax error, unexpected tSYMBEG, expecting do or '{' or '('
