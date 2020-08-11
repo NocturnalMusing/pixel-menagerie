@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Species.destroy_all
+Pet.destroy_all
+User.destroy_all
+
+@admin = User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
+puts '#{User.count} users created'
+
+@crow = Pet.create!(
+    name: 'Crow', 
+    user: @admin,
+    image: '',
+    about: 'Testing'
+)
+
+@mammals = Species.create!(name: 'Mammals')
+@avians = Species.create!(name: 'Avians')
+@aquatic = Species.create!(name: 'Aquatic')
+@insect = Species.create!(name: 'Insect')
+@mythic = Species.create!(name: 'Mythic')
+@misc = Species.create!(name: '???')

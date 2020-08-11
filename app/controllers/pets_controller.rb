@@ -2,19 +2,19 @@ class PetsController < ApplicationController
     before_action :set_pet, only: [:show, :update, :destroy]
     before_action :authorize_request, only: [:create, :update, :destroy, :add_flavor]
 
-     # GET /foods
+    # GET /pets
   def index
     @pets = Pet.all
 
     render json: @pets
   end
 
-  # GET /foods/1
+  # GET /pets/1
   def show
     render json: @pet
   end
 
-  # POST /foods
+  # POST /pets
   def create
     @pet = Pet.new(food_params)
     @pet.user = @current_user
@@ -26,7 +26,7 @@ class PetsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /foods/1
+  # PATCH/PUT /pets/1
   def update
     if @pet.update(pet_params)
       render json: @pet
@@ -35,21 +35,11 @@ class PetsController < ApplicationController
     end
   end
 
-  # DELETE /foods/1
+  # DELETE /pets/1
   def destroy
     @pet.destroy
   end
-
-  # PUT /flavors/1/foods/2
-#   def add_flavor
-#     @food = Food.find(params[:id])
-#     @flavor = Flavor.find(params[:flavor_id])
-
-#     @food.flavors << @flavor
-
-#     render json: @food, include: :flavors
-#   end
-
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_pet
