@@ -2,20 +2,14 @@ import React from 'react'
 import { Link, Route } from 'react-router-dom'
 import './App.css'
 
-import StyledHeader from './components/StyledHeader'
-import StyledButton from './components/StyledButton'
-import Footer from './components/Footer'
+import LandingPage from './screens/LandingPage'
 
 function App() {
   return (
     <>
-      <StyledHeader>
-        <Link>I'm A Link</Link>
-      </StyledHeader>
-      <StyledButton>
-        ButtonFill
-      </StyledButton>
-      <Footer/>
+      <Route exact to='/'>
+        <LandingPage/>
+      </Route>
     </>
   );
 }
