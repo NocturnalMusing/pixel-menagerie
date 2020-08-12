@@ -15,6 +15,7 @@ function App() {
       <StyledButton>
         ButtonFill
       </StyledButton>
+      <Footer/>
     </>
   );
 }
