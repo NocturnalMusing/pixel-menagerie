@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
+import './StyledButton.css'
 
-export default class StyledButton extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
-    }
+export default function StyledButton(props) {
+    return (
+        <>
+         <button className='button'>{props.children}</button>   
+        </>
+    )
 }
+
