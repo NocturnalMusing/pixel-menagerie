@@ -11,7 +11,7 @@
 # User.destroy_all
 
 @admin = User.create!(username: 'admin', email: 'admin@email.com', password: '123456')
-puts '#{User.count} users created'
+puts `#{User.count} users created`
 
 @mammals = Species.create!(name: 'Mammals')
 @avians = Species.create!(name: 'Avians')
@@ -19,7 +19,7 @@ puts '#{User.count} users created'
 @insect = Species.create!(name: 'Insect')
 @mythic = Species.create!(name: 'Mythic')
 @misc = Species.create!(name: '???')
-puts '#{Species.count} species created'
+puts `#{Species.count} species created`
 
 @crow = Pet.create!(
     name: 'Crow', 
