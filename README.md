@@ -121,19 +121,22 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create BE Tables |    H     |     3 hrs      |     TBD     |     TBD     |
-| Create Authentication Actions |    H     |     1 hrs      |     TBD     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     TBD     |     TBD     |
-| Create Needed Screens |    H     |     1 hrs      |     TBD     |     TBD     |
-| Create Header, Footer, & Button Components |    H     |     1 hrs      |     TBD     |     TBD     |
-| Create SignUp Component |    H     |     1 hrs      |     TBD     |     TBD     |
-| Create PetsArray and PetList Components |    H     |     3 hrs      |     TBD     |     TBD     |
-| Populate Landing, Sign Up, Adopt and User Screens |    H     |     3 hrs      |     TBD     |     TBD     |
+| Create BE Tables |    H     |     3 hrs      |     3 hrs     |     3hrs     |
+| Create Authentication Actions |    H     |     1 hrs      |     1hrs     |     1hrs     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     1hrs     |
+| Create Needed Screens |    H     |     1 hrs      |     30 mins     |     30mins     |
+| Create Header, Footer, & Button Components |    H     |     1 hrs      |     45mins     |     45mins     |
+| Create SignUp Component |    H     |     1 hrs      |     1 hrs     |     1hrs     |
+| Create PetSpecies file |    H     |     1 hrs      |     20 mins     |     20mins     |
+| Populate Landing Scren |    H     |     1 hrs      |     20 mins     |     20mins     |
+| Populate Sign Up Screen |    H     |     1hrs      |     1 hrs     |     1hrs     |
+| Populate Adopt Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Populate User Screen |    H     |     1 hrs      |     1 hrs     |     1hrs     |
 | Create PetDetail and PetEdit Screens |    H     |     3 hrs      |     TBD     |     TBD     |
 | Desktop Styling |    H     |     3 hrs      |     TBD     |     TBD     |
 | Tablet Styling |    H     |     3 hrs      |     TBD     |     TBD     |
 | Mobile Styling |    H     |     3 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     28 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     29 hrs      |     12 hrs     |     TBD     |
 
 <br>
 
