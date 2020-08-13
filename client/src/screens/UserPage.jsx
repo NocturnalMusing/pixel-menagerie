@@ -15,10 +15,13 @@ export default function UserPage(props) {
                 <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            <h1>Welcome back, {props.currentUser.username}!</h1>
+            {props.currentUser &&
+                <h1>Welcome back, {props.currentUser.username}!</h1>
+            }
+
 
             {/* map thru user's pets here */}
-            
+
             <Footer />
         </>
     )

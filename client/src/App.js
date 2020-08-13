@@ -12,6 +12,8 @@ import LandingPage from './screens/LandingPage'
 import SignUpPage from './screens/SignUpPage'
 import UserPage from './screens/UserPage'
 import AdoptZone from './screens/AdoptZone'
+import PetDetail from './screens/PetDetail'
+import PetEdit from './screens/PetEdit'
 
 function App() {
   library.add(
@@ -69,6 +71,10 @@ function App() {
           {...props} 
           currentUser={currentUser}
           handleLogout={handleLogout}/>
+      )} />
+      <Route exact path='/pet/:id' render={(props) => (
+        <PetDetail 
+        {...props} />
       )} />
     </>
   );
