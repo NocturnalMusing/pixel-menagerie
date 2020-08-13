@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
 import { mammals } from '../assets/PetSpecies'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function AdoptZone(props) {
 
@@ -26,7 +27,7 @@ export default function AdoptZone(props) {
             <h3>Mammals</h3>
             <div>
                 {mammals.map(mammal => 
-                    <>{mammal.image}</>
+                    <FontAwesomeIcon icon={`${mammal.image}`}/>
                     )}
             </div>
 

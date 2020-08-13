@@ -62,28 +62,28 @@ export const aquatic = [
 export const mammals = [
   {
     "name": "Dog",
-    "image": "fontAwesome",
+    "image": "dog",
     "about": "lorem ipsum",
     "user_id": null,
     "species_id": 19
   },
   {
     "name": "Cat",
-    "image": "fontAwesome",
+    "image": "cat",
     "about": "lorem ipsum",
     "user_id": null,
     "species_id": 19
   },
   {
     "name": "Hippo",
-    "image": "fontAwesome",
+    "image": "hippo",
     "about": "lorem ipsum",
     "user_id": null,
     "species_id": 19
   },
   {
     "name": "Horse",
-    "image": "fontAwesome",
+    "image": "horse",
     "about": "lorem ipsum",
     "user_id": null,
     "species_id": 19
