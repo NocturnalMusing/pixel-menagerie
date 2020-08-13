@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { Route } from 'react-router-dom'
+import { Route, useHistory } from 'react-router-dom'
 import './App.css'
 import { verifyUser } from './services/auth'
+import { removeToken } from './services/auth'
 
 import LandingPage from './screens/LandingPage'
 import SignUpPage from './screens/SignUpPage'
 import UserPage from './screens/UserPage'
+import AdoptZone from './screens/AdoptZone'
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -18,6 +20,16 @@ function App() {
     const userData = await verifyUser();
     setCurrentUser(userData);
   }
+
+  const history = useHistory()
+
+  const handleLogout = () => {
+    setCurrentUser(null)
+    localStorage.removeItem('authToken')
+    removeToken()
+    history.push('/')
+  }
+
 
   return (
     <>
@@ -35,11 +47,14 @@ function App() {
       <Route exact path='/user/:username' render={(props) => (
         <UserPage
           {...props}
-          setCurrentUser={setCurrentUser} />
+          setCurrentUser={setCurrentUser} 
+          handleLogout={handleLogout}/>
       )} />
       <Route exact path='/pet/adoption-zone' render={(props) => (
-        <UserPage //CHANGE ME TO ADOPTZONE
-          {...props} />
+        <AdoptZone
+          {...props} 
+          currentUser={currentUser}
+          handleLogout={handleLogout}/>
       )} />
     </>
   );

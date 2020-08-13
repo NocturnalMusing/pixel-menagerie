@@ -1,27 +1,18 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './UserPage.css'
-import { removeToken } from '../services/auth'
 
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
 
 export default function UserPage(props) {
-    const history = useHistory()
-
-    const handleLogout = () => {
-        props.setCurrentUser(null)
-        localStorage.removeItem('authToken')
-        removeToken()
-        history.push('/')
-    }
 
     return (
         <>
             <StyledHeader>
-                <Link path='/'>Home</Link>
-                <Link path='/adoption-zone'>Adoption Zone</Link>
-                <Link onClick={handleLogout}>Logout</Link>
+                <Link to='/'>Home</Link>
+                <Link to='/pet/adoption-zone'>Adoption Zone</Link>
+                <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
             <p>Nothing is here yet</p>
