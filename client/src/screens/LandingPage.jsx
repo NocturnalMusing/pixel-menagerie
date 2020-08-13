@@ -25,7 +25,7 @@ export default function LandingPage(props) {
         const userData = await loginUser(loginData)
         props.setCurrentUser(userData)
 
-        props.history.push(`/${loginData.username}`)
+        props.history.push(`/user/${loginData.username}`)
     }
 
     return (

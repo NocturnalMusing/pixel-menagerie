@@ -27,17 +27,17 @@ function App() {
           currentUser={currentUser}
           setCurrentUser={setCurrentUser} />
       )} />
-      <Route path='/signup' render={(props) => (
+      <Route exact path='/signup' render={(props) => (
         <SignUpPage
           {...props}
           setCurrentUser={setCurrentUser} />
       )} />
-      <Route path='/:username' render={(props) => (
+      <Route exact path='/user/:username' render={(props) => (
         <UserPage
           {...props}
           setCurrentUser={setCurrentUser} />
       )} />
-      <Route path='/adoption-zone' render={(props) => (
+      <Route exact path='/adoption-zone' render={(props) => (
         <UserPage //CHANGE ME TO ADOPTZONE
           {...props} />
       )} />
