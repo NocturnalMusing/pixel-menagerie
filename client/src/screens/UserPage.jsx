@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './UserPage.css'
 
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
