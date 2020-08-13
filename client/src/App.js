@@ -5,8 +5,9 @@ import { verifyUser } from './services/auth'
 import { removeToken } from './services/auth'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faDog, faCat, faHorse, faHippo } from '@fortawesome/free-solid-svg-icons'
-
+import { faCrow, faDove, faKiwiBird, faDog, faCat, faHorse, faHippo,
+  faDragon, faOtter, faFrog, faFish, faSpider, faBug, faBreadSlice } 
+  from '@fortawesome/free-solid-svg-icons'
 import LandingPage from './screens/LandingPage'
 import SignUpPage from './screens/SignUpPage'
 import UserPage from './screens/UserPage'
@@ -14,7 +15,12 @@ import AdoptZone from './screens/AdoptZone'
 
 function App() {
   library.add(
-    faDog, faCat, faHorse, faHippo
+    faCrow, faDove, faKiwiBird,
+    faDog, faCat, faHorse, faHippo,
+    faDragon,
+    faOtter, faFrog, faFish,
+    faSpider, faBug,
+    faBreadSlice
     )
 
   const [currentUser, setCurrentUser] = useState(null);

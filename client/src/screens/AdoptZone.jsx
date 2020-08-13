@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
-import { mammals } from '../assets/PetSpecies'
+import { mammals, avians, mythic, aquatic, insects, misc } from '../assets/PetSpecies'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function AdoptZone(props) {
@@ -24,10 +24,45 @@ export default function AdoptZone(props) {
                 <h3>Click a creature to take them home</h3>
             </header>
 
+            <h3>Avians</h3>
+            <div>
+                {avians.map(avian => 
+                    <FontAwesomeIcon icon={`${avian.image}`} size='5x'/>
+                    )}
+            </div>
+
             <h3>Mammals</h3>
             <div>
                 {mammals.map(mammal => 
-                    <FontAwesomeIcon icon={`${mammal.image}`}/>
+                    <FontAwesomeIcon icon={`${mammal.image}`} size='5x'/>
+                    )}
+            </div>
+
+            <h3>Aquatic</h3>
+            <div>
+                {aquatic.map(aquatic => 
+                    <FontAwesomeIcon icon={`${aquatic.image}`} size='5x'/>
+                    )}
+            </div>
+            
+            <h3>Insects</h3>
+            <div>
+                {insects.map(insect => 
+                    <FontAwesomeIcon icon={`${insect.image}`} size='5x'/>
+                    )}
+            </div>
+
+            <h3>Mythic</h3>
+            <div>
+                {mythic.map(myth => 
+                    <FontAwesomeIcon icon={`${myth.image}`} size='5x'/>
+                    )}
+            </div>
+
+            <h3>???</h3>
+            <div>
+                {misc.map(misc => 
+                    <FontAwesomeIcon icon={`${misc.image}`} size='5x'/>
                     )}
             </div>
 
