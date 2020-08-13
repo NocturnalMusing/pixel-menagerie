@@ -11,11 +11,11 @@ export default function SignUpPage() {
                 <Link to='/'>Home</Link>
             </StyledHeader>
 
-            <greeting>
+            <section>
                 <p>New to Pixel Menagerie?</p>
                 <p>Let's get started by filling out this adoption application!</p>
                 <p>Once you're done, you'll be taken to the Adoption Zone to pick your first pet!</p>
-            </greeting>
+            </section>
 
             <h2>SIGN UP</h2>
 
