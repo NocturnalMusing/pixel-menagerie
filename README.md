@@ -130,13 +130,13 @@ src
 | Create PetSpecies file |    H     |     1 hrs      |     20 mins     |     20mins     |
 | Populate Landing Scren |    H     |     1 hrs      |     20 mins     |     20mins     |
 | Populate Sign Up Screen |    H     |     1hrs      |     1 hrs     |     1hrs     |
-| Populate Adopt Screen |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Populate Adopt Screen |    H     |     3 hrs      |     1.5 hrs     |     1.5hrs     |
 | Populate User Screen |    H     |     1 hrs      |     1 hrs     |     1hrs     |
 | Create PetDetail and PetEdit Screens |    H     |     3 hrs      |     TBD     |     TBD     |
 | Desktop Styling |    H     |     3 hrs      |     TBD     |     TBD     |
 | Tablet Styling |    H     |     3 hrs      |     TBD     |     TBD     |
 | Mobile Styling |    H     |     3 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     29 hrs      |     12 hrs     |     TBD     |
+| TOTAL               |          |     29 hrs      |     13.5 hrs     |     TBD     |
 
 <br>
 
