@@ -11,15 +11,15 @@ export default function LandingPage() {
             <StyledHeader>
                 <form>
                     <label for='login'>Login</label>
-                    <input type='text' name='username' placeholder='Username'></input>
-                    <input type='password' name='password' placeholder='Password'></input>
+                    <input type='text' name='username' placeholder='Username'/>
+                    <input type='password' name='password' placeholder='Password'/>
                 </form>
                 <Link to='/'>
                     <StyledButton className='login-button'>
                         Submit
                     </StyledButton>
                 </Link>
-                <Link to='/'>
+                <Link to='/signup'>
                     Sign Up
                 </Link>
             </StyledHeader>
