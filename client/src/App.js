@@ -37,7 +37,7 @@ function App() {
           {...props}
           setCurrentUser={setCurrentUser} />
       )} />
-      <Route exact path='/adoption-zone' render={(props) => (
+      <Route exact path='/pet/adoption-zone' render={(props) => (
         <UserPage //CHANGE ME TO ADOPTZONE
           {...props} />
       )} />
