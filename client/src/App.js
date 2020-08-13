@@ -61,6 +61,7 @@ function App() {
         <UserPage
           {...props}
           setCurrentUser={setCurrentUser} 
+          currentUser={currentUser}
           handleLogout={handleLogout}/>
       )} />
       <Route exact path='/pet/adoption-zone' render={(props) => (

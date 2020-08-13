@@ -15,7 +15,9 @@ export default function UserPage(props) {
                 <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            <p>Nothing is here yet</p>
+            <h1>Welcome back, {props.currentUser.username}!</h1>
+
+            {/* map thru user's pets here */}
             
             <Footer />
         </>
