@@ -24,6 +24,7 @@ function App() {
       <Route exact path='/' render={(props) => (
         <LandingPage
           {...props}
+          currentUser={currentUser}
           setCurrentUser={setCurrentUser} />
       )} />
       <Route path='/signup' render={(props) => (
@@ -33,7 +34,8 @@ function App() {
       )} />
       <Route path='/:username' render={(props) => (
         <UserPage
-          {...props} />
+          {...props}
+          setCurrentUser={setCurrentUser} />
       )} />
       <Route path='/adoption-zone' render={(props) => (
         <UserPage //CHANGE ME TO ADOPTZONE

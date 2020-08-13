@@ -7,24 +7,25 @@ import './LandingPage.css'
 import { loginUser } from '../services/auth'
 
 export default function LandingPage(props) {
-    const [ loginData, setLoginData ] = useState({
+    const [loginData, setLoginData] = useState({
         username: '',
         password: ''
     })
 
     const handleChange = (e) => {
-        const {name, value} = e.target
+        const { name, value } = e.target
         setLoginData({
             ...loginData,
             [name]: value
         })
     }
 
-    const handleSubmit = async (e)=>{
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const userData = await loginUser(loginData)
         props.setCurrentUser(userData)
-        props.history.push(`/${this.username}`)
+
+        props.history.push(`/${loginData.username}`)
     }
 
     return (
@@ -32,12 +33,12 @@ export default function LandingPage(props) {
             <StyledHeader>
                 <form onSubmit={handleSubmit}>
                     <label for='login'>Login</label>
-                    <input type='text' name='username' value={loginData.username} 
-                    onChange={handleChange} placeholder='Username'/>
+                    <input type='text' name='username' value={loginData.username}
+                        onChange={handleChange} placeholder='Username' />
                     <input type='password' name='password' value={loginData.password}
-                    onChange={handleChange} placeholder='Password'/>
+                        onChange={handleChange} placeholder='Password' />
+                    <StyledButton>Submit</StyledButton>
                 </form>
-                <StyledButton>Submit</StyledButton>
                 <Link to='/signup'>
                     Sign Up
                 </Link>
