@@ -35,6 +35,10 @@ function App() {
         <UserPage
           {...props} />
       )} />
+      <Route path='/adoption-zone' render={(props) => (
+        <UserPage //CHANGE ME TO ADOPTZONE
+          {...props} />
+      )} />
     </>
   );
 }
