@@ -72,7 +72,7 @@ function App() {
           currentUser={currentUser}
           handleLogout={handleLogout}/>
       )} />
-      <Route exact path='/pet/:id' render={(props) => (
+      <Route exact path='/pets/:id' render={(props) => (
         <PetDetail 
         {...props} />
       )} />
