@@ -4,18 +4,23 @@ import { Link } from 'react-router-dom'
 import StyledHeader from '../components/StyledHeader'
 import StyledButton from '../components/StyledButton'
 import Footer from '../components/Footer'
-import { mammals, avians, mythic, aquatic, insects, misc } from '../assets/PetSpecies'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { readOnePet } from '../services/pets'
+import { readOnePet, destroyPet } from '../services/pets'
 
 export default function PetDetail(props) {
 
-    const [onePet, setOnePet] = useState([])
+    const [onePet, setOnePet] = useState('')
 
-    // useEffect(async () => {
-    //     let current = readOnePet(id)
-    //     setOnePet(current)
-    // }, [])
+    const petId = props.match.params.id
+
+    useEffect(async () => {
+        let current = await readOnePet(petId)
+        setOnePet(current)
+    }, [])
+
+    const handleDelete = () => {
+        destroyPet(petId)
+    }
 
     return (
         <>
@@ -30,11 +35,22 @@ export default function PetDetail(props) {
                 <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            {/* {onePet && onePet.
-                < FontAwesomeIcon icon={`${pets.image}`} size='7x' />
-            <h3>{pets.name}</h3>
-            <p>{pets.about}</p>
-            } */}
+            {onePet &&
+                <>
+                    < FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
+                    <h3>{onePet.name}</h3>
+                    <p>{onePet.about}</p>
+                </>
+            }
+            
+            {/* <Link to={`/user/${props.currentUser.id}/pet/${}/edit`}> */}
+            <StyledButton>Edit</StyledButton>
+            {/* </Link> */}
+
+            <Link to={`/`}>
+            <StyledButton onClick={handleDelete}>Release</StyledButton>
+            </Link>
+
             <Footer />
         </>
     )
