@@ -1,8 +1,12 @@
 .header {
     height: 50px;
-    width: 100%;
+    width: 98%;
     display: flex;
     align-items: center;
+    background-color: #3CA2B9;
+    border-radius: 0px 0px 25px 25px;
+    /* border-radius goes top-left, top-right, bottom-right, bottom-left  */
+    margin: 0 auto;
 }
 
 .header a {

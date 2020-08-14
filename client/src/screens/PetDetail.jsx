@@ -6,15 +6,16 @@ import StyledButton from '../components/StyledButton'
 import Footer from '../components/Footer'
 import { mammals, avians, mythic, aquatic, insects, misc } from '../assets/PetSpecies'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { readOnePet } from '../services/pets'
 
 export default function PetDetail(props) {
 
-    const [ onePet, setOnePet ] = useState([])
+    const [onePet, setOnePet] = useState([])
 
-    useEffect(async () => {
-        let current = readOnePet(id)
-        setOnePet(current)
-    }, [])
+    // useEffect(async () => {
+    //     let current = readOnePet(id)
+    //     setOnePet(current)
+    // }, [])
 
     return (
         <>
@@ -29,10 +30,11 @@ export default function PetDetail(props) {
                 <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            <FontAwesomeIcon icon={`${pets.image}`} size='7x' />
+            {/* {onePet && onePet.
+                < FontAwesomeIcon icon={`${pets.image}`} size='7x' />
             <h3>{pets.name}</h3>
             <p>{pets.about}</p>
-
+            } */}
             <Footer />
         </>
     )
