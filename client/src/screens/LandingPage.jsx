@@ -43,6 +43,7 @@ export default function LandingPage(props) {
                     Sign Up
                 </Link>
             </StyledHeader>
+            
             <div className='container'>
                 <h1 className='site-name'>PIXEL MENAGERIE</h1>
             </div>

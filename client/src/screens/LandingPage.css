@@ -1,2 +1,9 @@
-/* Center H1 on page 
-Style Login Button*/
+/* Style Login Button*/
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
