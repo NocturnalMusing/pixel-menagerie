@@ -156,6 +156,7 @@ src
 
 - Add a pop-up on the 'release' button explaining you're about to return your pet to the wild and asking for confirmation.
 - Add one to two line 'descriptions' for the pets in the Pets Table. Example; _"You're pretty sure it's a normal cat, but it's hard to tell. Oh well, it probably likes fish anyway."_
+- Add a delete user button
 - Upon selecting a pet on the adoption page, a card appears with the description and a "take home?" button.
 - A starter pet screen appears after you sign up, with three randomly generated pets from the pet-list. 
 - A feeding system, with a hunger bar and shop through which to obtain food.
