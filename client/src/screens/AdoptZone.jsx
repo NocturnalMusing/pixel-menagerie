@@ -42,35 +42,45 @@ export default function AdoptZone(props) {
             <h3>Mammals</h3>
             <div>
                 {mammals.map(mammal =>
-                    <FontAwesomeIcon icon={`${mammal.image}`} size='5x' />
+                    <FontAwesomeIcon icon={`${mammal.image}`} size='5x' 
+                    onClick= {() => handleClick(mammal)
+                    }/>
                 )}
             </div>
 
             <h3>Aquatic</h3>
             <div>
                 {aquatic.map(aquatic =>
-                    <FontAwesomeIcon icon={`${aquatic.image}`} size='5x' />
+                    <FontAwesomeIcon icon={`${aquatic.image}`} size='5x' 
+                    onClick= {() => handleClick(aquatic)
+                    }/>
                 )}
             </div>
 
             <h3>Insects</h3>
             <div>
                 {insects.map(insect =>
-                    <FontAwesomeIcon icon={`${insect.image}`} size='5x' />
+                    <FontAwesomeIcon icon={`${insect.image}`} size='5x' 
+                    onClick= {() => handleClick(insect)
+                    }/>
                 )}
             </div>
 
             <h3>Mythic</h3>
             <div>
                 {mythic.map(myth =>
-                    <FontAwesomeIcon icon={`${myth.image}`} size='5x' />
+                    <FontAwesomeIcon icon={`${myth.image}`} size='5x' 
+                    onClick= {() => handleClick(myth)
+                    }/>
                 )}
             </div>
 
             <h3>???</h3>
             <div>
                 {misc.map(misc =>
-                    <FontAwesomeIcon icon={`${misc.image}`} size='5x' />
+                    <FontAwesomeIcon icon={`${misc.image}`} size='5x' 
+                    onClick= {() => handleClick(misc)
+                    }/>
                 )}
             </div>
 
