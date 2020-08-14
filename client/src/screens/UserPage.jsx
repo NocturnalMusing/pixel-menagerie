@@ -4,8 +4,13 @@ import './UserPage.css'
 
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
+import { mammals, avians, mythic, aquatic, insects, misc } from '../assets/PetSpecies'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { readAllPets } from '../services/pets'
 
 export default function UserPage(props) {
+
+    const allPets = readAllPets()
 
     return (
         <>
@@ -18,9 +23,18 @@ export default function UserPage(props) {
             {props.currentUser &&
                 <h1>Welcome back, {props.currentUser.username}!</h1>
             }
-
-
-            {/* map thru user's pets here */}
+            <div>
+                {/* use readAllPets to find all the pets where user_id matches props.currentUser.id*/}
+                {allPets.map(pets => {
+                    if (pets.user_id === props.currentUser.id) {
+                        <>
+                            <FontAwesomeIcon icon={`${pets.image}`} size='7x' />
+                            <h3>{pets.name}</h3>
+                            <p>{pets.about}</p>
+                        </>
+                    }
+                })}
+            </div>
 
             <Footer />
         </>

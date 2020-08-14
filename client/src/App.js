@@ -72,8 +72,13 @@ function App() {
           currentUser={currentUser}
           handleLogout={handleLogout}/>
       )} />
-      <Route exact path='/pets/:id' render={(props) => (
+      <Route exact path='/user/:id/pet/:id' render={(props) => (
         <PetDetail 
+        {...props} 
+        currentUser={currentUser} />
+      )} />
+      <Route exact path='/user/:id/pet/:id/edit' render={(props) => (
+        <PetEdit 
         {...props} />
       )} />
     </>
