@@ -14,7 +14,6 @@ export default function UserPage(props) {
 
     useEffect(async () => {
         let list = await readAllPets()
-        console.log(list)
         setAllPets(list)
     }, [])
 
@@ -38,7 +37,6 @@ export default function UserPage(props) {
                                     <FontAwesomeIcon icon={`${pets.image}`} size='5x' />
                                 </Link>
                                 <h3>{pets.name}</h3>
-                                {/* <p>{pets.about}</p> */}
                             </>
                         )
                         )}

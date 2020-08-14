@@ -9,11 +9,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function PetDetail(props) {
 
-    // const [ onePet, setOnePet ] = useState([])
+    const [ onePet, setOnePet ] = useState([])
 
-    // useEffect(async () => {
-    //     let current = readOnePet()
-    // })
+    useEffect(async () => {
+        let current = readOnePet(id)
+        setOnePet(current)
+    }, [])
 
     return (
         <>
@@ -28,7 +29,9 @@ export default function PetDetail(props) {
                 <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            <p>Nothing here yet</p>
+            <FontAwesomeIcon icon={`${pets.image}`} size='7x' />
+            <h3>{pets.name}</h3>
+            <p>{pets.about}</p>
 
             <Footer />
         </>
