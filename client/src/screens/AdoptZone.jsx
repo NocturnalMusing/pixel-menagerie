@@ -10,7 +10,6 @@ import { postPet } from '../services/pets'
 export default function AdoptZone(props) {
     const handleClick = (petData) => {
         postPet(petData)
-        // redirect to pet page, route of :id
     }
 
     return (
@@ -33,54 +32,54 @@ export default function AdoptZone(props) {
             <h3>Avians</h3>
             <div>
                 {avians.map(avian =>
-                    <FontAwesomeIcon icon={`${avian.image}`} size='5x' 
-                    onClick= {() => handleClick(avian)
-                }/>
+                    <FontAwesomeIcon icon={`${avian.image}`} size='5x'
+                        onClick={() => handleClick(avian)
+                        } />
                 )}
             </div>
 
             <h3>Mammals</h3>
             <div>
                 {mammals.map(mammal =>
-                    <FontAwesomeIcon icon={`${mammal.image}`} size='5x' 
-                    onClick= {() => handleClick(mammal)
-                    }/>
+                    <FontAwesomeIcon icon={`${mammal.image}`} size='5x'
+                        onClick={() => handleClick(mammal)
+                        } />
                 )}
             </div>
 
             <h3>Aquatic</h3>
             <div>
                 {aquatic.map(aquatic =>
-                    <FontAwesomeIcon icon={`${aquatic.image}`} size='5x' 
-                    onClick= {() => handleClick(aquatic)
-                    }/>
+                    <FontAwesomeIcon icon={`${aquatic.image}`} size='5x'
+                        onClick={() => handleClick(aquatic)
+                        } />
                 )}
             </div>
 
             <h3>Insects</h3>
             <div>
                 {insects.map(insect =>
-                    <FontAwesomeIcon icon={`${insect.image}`} size='5x' 
-                    onClick= {() => handleClick(insect)
-                    }/>
+                    <FontAwesomeIcon icon={`${insect.image}`} size='5x'
+                        onClick={() => handleClick(insect)
+                        } />
                 )}
             </div>
 
             <h3>Mythic</h3>
             <div>
                 {mythic.map(myth =>
-                    <FontAwesomeIcon icon={`${myth.image}`} size='5x' 
-                    onClick= {() => handleClick(myth)
-                    }/>
+                    <FontAwesomeIcon icon={`${myth.image}`} size='5x'
+                        onClick={() => handleClick(myth)
+                        } />
                 )}
             </div>
 
             <h3>???</h3>
             <div>
                 {misc.map(misc =>
-                    <FontAwesomeIcon icon={`${misc.image}`} size='5x' 
-                    onClick= {() => handleClick(misc)
-                    }/>
+                    <FontAwesomeIcon icon={`${misc.image}`} size='5x'
+                        onClick={() => handleClick(misc)
+                        } />
                 )}
             </div>
 

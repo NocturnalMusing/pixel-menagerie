@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './UserPage.css'
 
@@ -10,7 +10,13 @@ import { readAllPets } from '../services/pets'
 
 export default function UserPage(props) {
 
-    const allPets = readAllPets()
+    const [allPets, setAllPets] = useState([])
+
+    useEffect(async () => {
+        let list = await readAllPets()
+        console.log(list)
+        setAllPets(list)
+    }, [])
 
     return (
         <>
@@ -21,20 +27,24 @@ export default function UserPage(props) {
             </StyledHeader>
 
             {props.currentUser &&
-                <h1>Welcome back, {props.currentUser.username}!</h1>
+                <>
+                    <h1>Welcome back, {props.currentUser.username}!</h1>
+
+
+                    <div>
+                        {allPets && allPets.filter(pet => pet.user_id === props.currentUser.id).map(pets => (
+                            <>
+                                <Link to={`/user/${props.currentUser.id}/pet/${pets.id}`}>
+                                    <FontAwesomeIcon icon={`${pets.image}`} size='5x' />
+                                </Link>
+                                <h3>{pets.name}</h3>
+                                {/* <p>{pets.about}</p> */}
+                            </>
+                        )
+                        )}
+                    </div>
+                </>
             }
-            <div>
-                {/* use readAllPets to find all the pets where user_id matches props.currentUser.id*/}
-                {allPets.map(pets => {
-                    if (pets.user_id === props.currentUser.id) {
-                        <>
-                            <FontAwesomeIcon icon={`${pets.image}`} size='7x' />
-                            <h3>{pets.name}</h3>
-                            <p>{pets.about}</p>
-                        </>
-                    }
-                })}
-            </div>
 
             <Footer />
         </>

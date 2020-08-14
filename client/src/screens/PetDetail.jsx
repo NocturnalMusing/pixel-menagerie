@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import StyledHeader from '../components/StyledHeader'
@@ -8,6 +8,13 @@ import { mammals, avians, mythic, aquatic, insects, misc } from '../assets/PetSp
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function PetDetail(props) {
+
+    // const [ onePet, setOnePet ] = useState([])
+
+    // useEffect(async () => {
+    //     let current = readOnePet()
+    // })
+
     return (
         <>
             <StyledHeader>
