@@ -12,3 +12,8 @@
 .header a {
     text-decoration: none;
 }
+
+.header input {
+    border-radius: 5px;
+    border-style: none;
+}
