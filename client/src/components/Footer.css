@@ -3,6 +3,9 @@
     align-items: center;
     flex-shrink: 0;
     width: 100%;
+    position: fixed; 
+    /* Remove position if you feel like fenagaling how to get it to just stay on the bottom of the page :/ */
+    bottom: 0px;
     padding-left: 0;
     padding-bottom: 10px;
     padding-top: 100px;
