@@ -15,6 +15,6 @@
 
 .button:focus {
     outline: none;
-    background-color: #7BC6D3;
+    color: #7BC6D3;
     /* adjust width and height when clicked after deciding on button params */
 }
