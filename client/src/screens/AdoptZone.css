@@ -14,6 +14,13 @@
     margin: 0 auto;
 }
 
+.species-container header {
+    text-align: center;
+    padding-top: 10%;
+    line-height: .5;
+    padding-bottom: 8%;
+}
+
 .species-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
@@ -21,4 +28,5 @@
 
 .species-pet {
     margin: 0px 35px 20px 35px;
+    padding-bottom: 5%;
 }
