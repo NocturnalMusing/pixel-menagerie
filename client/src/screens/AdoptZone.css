@@ -9,7 +9,16 @@
     color: #2D657F;
 }
 
+.species-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .species-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
+}
+
+.species-pet {
+    margin: 0px 35px 20px 35px;
 }
