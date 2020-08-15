@@ -29,3 +29,7 @@
     float: right;
     padding-top: 50px;
 }
+
+.detail-buttons button {
+    margin: 20px;
+}
