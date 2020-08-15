@@ -9,8 +9,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { postPet } from '../services/pets'
 
 export default function AdoptZone(props) {
-    const handleClick = (petData) => {
-        postPet(petData)
+    const handleClick = async (petData) => {
+        const newPet = await postPet(petData)
+        props.history.push(`/user/${props.currentUser.id}/pet/${newPet.id}`)
     }
 
     return (

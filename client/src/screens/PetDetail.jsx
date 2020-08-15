@@ -26,6 +26,9 @@ export default function PetDetail(props) {
 
     const handleDelete = () => {
         destroyPet(petId)
+        // debugger
+        props.setAllPets(props.allPets.filter( pet => pet.id !== parseInt(petId)))
+        props.history.push(`/user/${props.currentUser.username}`)
     }
 
     return (
@@ -56,9 +59,8 @@ export default function PetDetail(props) {
                             <StyledButton>Edit</StyledButton>
                         </Link>
                     }
-                    <Link to={`/`}>
-                        <StyledButton onClick={handleDelete}>Release</StyledButton>
-                    </Link>
+
+                    <StyledButton onClick={handleDelete}>Release</StyledButton>
                 </div>
             </div>
 

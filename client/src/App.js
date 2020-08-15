@@ -3,10 +3,13 @@ import { Route, useHistory } from 'react-router-dom'
 import './App.css'
 import { verifyUser } from './services/auth'
 import { removeToken } from './services/auth'
+import { readAllPets } from './services/pets'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCrow, faDove, faKiwiBird, faDog, faCat, faHorse, faHippo,
-  faDragon, faOtter, faFrog, faFish, faSpider, faBug, faBreadSlice } 
+import {
+  faCrow, faDove, faKiwiBird, faDog, faCat, faHorse, faHippo,
+  faDragon, faOtter, faFrog, faFish, faSpider, faBug, faBreadSlice
+}
   from '@fortawesome/free-solid-svg-icons'
 import LandingPage from './screens/LandingPage'
 import SignUpPage from './screens/SignUpPage'
@@ -23,7 +26,7 @@ function App() {
     faOtter, faFrog, faFish,
     faSpider, faBug,
     faBreadSlice
-    )
+  )
 
   const [currentUser, setCurrentUser] = useState(null);
 
@@ -45,6 +48,17 @@ function App() {
     history.push('/')
   }
 
+  const [allPets, setAllPets] = useState([])
+
+  useEffect(() => {
+    getAllPets()
+  }, [])
+
+  const getAllPets = async () => {
+    let list = await readAllPets()
+    setAllPets(list)
+  }
+
 
   return (
     <>
@@ -62,25 +76,32 @@ function App() {
       <Route exact path='/user/:username' render={(props) => (
         <UserPage
           {...props}
-          setCurrentUser={setCurrentUser} 
+          allPets={allPets}
+          setCurrentUser={setCurrentUser}
           currentUser={currentUser}
-          handleLogout={handleLogout}/>
+          handleLogout={handleLogout} />
       )} />
       <Route exact path='/pet/adoption-zone' render={(props) => (
         <AdoptZone
-          {...props} 
+          {...props}
           currentUser={currentUser}
-          handleLogout={handleLogout}/>
+          handleLogout={handleLogout} />
       )} />
       <Route exact path='/user/:user_id/pet/:id' render={(props) => (
-        <PetDetail 
-        {...props} 
-        currentUser={currentUser} />
+        <PetDetail
+          {...props}
+          allPets={allPets}
+          setAllPets={setAllPets}
+          currentUser={currentUser} 
+          handleLogout={handleLogout} />
       )} />
       <Route exact path='/user/:user_id/pet/:id/edit' render={(props) => (
-        <PetEdit 
-        {...props}
-        currentUser={currentUser} />
+        <PetEdit
+          {...props}
+          allPets={allPets}
+          setAllPets={setAllPets}
+          currentUser={currentUser} 
+          handleLogout={handleLogout} />
       )} />
     </>
   );

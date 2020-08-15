@@ -4,22 +4,11 @@ import './UserPage.css'
 
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
-import { mammals, avians, mythic, aquatic, insects, misc } from '../assets/PetSpecies'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { readAllPets } from '../services/pets'
 
 export default function UserPage(props) {
 
-    const [allPets, setAllPets] = useState([])
-
-    useEffect(() => {
-        getAllPets()
-    }, [])
-
-    const getAllPets = async () => {
-        let list = await readAllPets()
-        setAllPets(list)
-    }
+    const {allPets} = props
 
     return (
         <>

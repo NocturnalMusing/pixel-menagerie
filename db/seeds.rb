@@ -22,9 +22,9 @@
 # puts `#{Species.count} species created`
 
 # @crow = Pet.create!(
-#     name: 'Crow', 
+#     name: 'Poe', 
 #     user: @admin,
-#     image: '',
+#     image: 'crow',
 #     about: 'Testing',
 #     species_id: 20,
 #     user_id: 4
