@@ -1,0 +1,8 @@
+@font-face {
+    font-family: bulkyPixels;
+    src: url(../assets/BULKYPIX.TTF);
+}
+
+.user-page-pet-name {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

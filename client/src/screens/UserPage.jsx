@@ -36,7 +36,7 @@ export default function UserPage(props) {
                                 <Link to={`/user/${props.currentUser.id}/pet/${pets.id}`}>
                                     <FontAwesomeIcon icon={`${pets.image}`} size='5x' />
                                 </Link>
-                                <h3>{pets.name}</h3>
+                                <h3 className='user-page-pet-name'>{pets.name}</h3>
                             </>
                         )
                         )}

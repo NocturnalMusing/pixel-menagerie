@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import './PetDetail.css'
 
 import StyledHeader from '../components/StyledHeader'
 import StyledButton from '../components/StyledButton'
@@ -38,7 +39,7 @@ export default function PetDetail(props) {
             {onePet &&
                 <>
                     < FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
-                    <h3>{onePet.name}</h3>
+                    <h3 className='detail-name'>{onePet.name}</h3>
                     <p>{onePet.about}</p>
                 </>
             }
