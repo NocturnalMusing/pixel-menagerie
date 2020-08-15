@@ -23,6 +23,8 @@
 .detail-about {
     width: 85%;
     margin: 0 auto;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
 }
 
 .detail-buttons {

@@ -11,6 +11,9 @@
     padding-bottom: 5px;
     padding-top: 100px;
     height: 55px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 12px;
 }
 
 .site-credit {
