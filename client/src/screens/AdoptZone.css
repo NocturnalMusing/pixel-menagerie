@@ -1,0 +1,14 @@
+@font-face {
+    font-family: bulkyPixels;
+    src: url(../assets/BULKYPIX.TTF);
+}
+
+.adopt-zone {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+}
+
+.species-name {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './AdoptZone.css'
 
 import StyledHeader from '../components/StyledHeader'
 import Footer from '../components/Footer'
@@ -25,11 +26,11 @@ export default function AdoptZone(props) {
             </StyledHeader>
 
             <header>
-                <h1>Adoption Zone</h1>
+                <h1 className='adopt-zone'>Adoption Zone</h1>
                 <h3>Click a creature to take them home</h3>
             </header>
 
-            <h3>Avians</h3>
+            <h3 className='species-name'>Avians</h3>
             <div>
                 {avians.map(avian =>
                     <FontAwesomeIcon icon={`${avian.image}`} size='5x'
@@ -38,7 +39,7 @@ export default function AdoptZone(props) {
                 )}
             </div>
 
-            <h3>Mammals</h3>
+            <h3 className='species-name'>Mammals</h3>
             <div>
                 {mammals.map(mammal =>
                     <FontAwesomeIcon icon={`${mammal.image}`} size='5x'
@@ -47,7 +48,7 @@ export default function AdoptZone(props) {
                 )}
             </div>
 
-            <h3>Aquatic</h3>
+            <h3 className='species-name'>Aquatic</h3>
             <div>
                 {aquatic.map(aquatic =>
                     <FontAwesomeIcon icon={`${aquatic.image}`} size='5x'
@@ -56,7 +57,7 @@ export default function AdoptZone(props) {
                 )}
             </div>
 
-            <h3>Insects</h3>
+            <h3 className='species-name'>Insects</h3>
             <div>
                 {insects.map(insect =>
                     <FontAwesomeIcon icon={`${insect.image}`} size='5x'
@@ -65,7 +66,7 @@ export default function AdoptZone(props) {
                 )}
             </div>
 
-            <h3>Mythic</h3>
+            <h3 className='species-name'>Mythic</h3>
             <div>
                 {mythic.map(myth =>
                     <FontAwesomeIcon icon={`${myth.image}`} size='5x'
@@ -74,7 +75,7 @@ export default function AdoptZone(props) {
                 )}
             </div>
 
-            <h3>???</h3>
+            <h3 className='species-name'>???</h3>
             <div>
                 {misc.map(misc =>
                     <FontAwesomeIcon icon={`${misc.image}`} size='5x'
