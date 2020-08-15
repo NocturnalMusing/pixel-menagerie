@@ -3,6 +3,19 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
+.pets-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.pet-single {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
 .user-page-pet-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

@@ -30,14 +30,14 @@ export default function UserPage(props) {
                     <h1>Welcome back, {props.currentUser.username}!</h1>
 
 
-                    <div>
+                    <div className='pets-list'>
                         {allPets && allPets.filter(pet => pet.user_id === props.currentUser.id).map(pets => (
-                            <>
+                            <div className='pet-single'>
                                 <Link to={`/user/${props.currentUser.id}/pet/${pets.id}`}>
                                     <FontAwesomeIcon icon={`${pets.image}`} size='5x' />
                                 </Link>
                                 <h3 className='user-page-pet-name'>{pets.name}</h3>
-                            </>
+                            </div>
                         )
                         )}
                     </div>
