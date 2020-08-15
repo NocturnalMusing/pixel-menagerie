@@ -5,12 +5,12 @@ import StyledHeader from '../components/StyledHeader'
 import StyledButton from '../components/StyledButton'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { readOnePet, destroyPet, putPet, postPet } from '../services/pets'
+import { readOnePet, destroyPet, putPet } from '../services/pets'
 
-export default function PetDetail(props) {
+export default function PetEdit(props) {
 
     const [onePet, setOnePet] = useState('')
-    const [ formData, setFormData ] = useState({
+    const [formData, setFormData] = useState({
         name: '',
         about: ''
     })
@@ -27,13 +27,13 @@ export default function PetDetail(props) {
     }
 
     const handleChange = (e) => {
-        const {value} = e.target
-        setFormData({name: value, about: value})
+        const { name, value } = e.target
+        setFormData({ ...formData, [name]: value })
     }
 
-    const handleSave = async (e) => {
-        e.preventDefault()
-        const updatePet = await postPet(formData)
+    const handleSave = async () => {
+        const updatePet = await putPet(petId, formData)
+        props.history.push(`/user/${props.currentUser.id}/pet/${petId}`)
     }
 
     return (
@@ -54,26 +54,24 @@ export default function PetDetail(props) {
                     <FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
                     <form>
                         <input type='text' name='name'
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder='Name'>
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder='Name'>
                         </input>
-                        
-                        <input type='text' name='about' 
-                        value={formData.about}
-                        onChange={handleChange}
-                        placeholder='Tell us about your pet...'>
+
+                        <input type='text' name='about'
+                            value={formData.about}
+                            onChange={handleChange}
+                            placeholder='Tell us about your pet...'>
                         </input>
                     </form>
                 </>
             }
-            
-            {/* <Link to={`/user/${props.currentUser.id}/pet/${}`}> */}
+
             <StyledButton onClick={handleSave}>Save</StyledButton>
-            {/* </Link> */}
 
             <Link to={`/`}>
-            <StyledButton onClick={handleDelete}>Release</StyledButton>
+                <StyledButton onClick={handleDelete}>Release</StyledButton>
             </Link>
 
             <Footer />

@@ -14,10 +14,15 @@ export default function PetDetail(props) {
 
     const petId = props.match.params.id
 
-    useEffect(async () => {
+    useEffect(() => {
+        getOnePet()
+    }, [])
+    // If you need an async function, make one outside of your useeffect and call it inside
+
+    const getOnePet = async () => {
         let current = await readOnePet(petId)
         setOnePet(current)
-    }, [])
+    }
 
     const handleDelete = () => {
         destroyPet(petId)
@@ -33,7 +38,7 @@ export default function PetDetail(props) {
                     </Link>
                 }
                 <Link to='/pet/adoption-zone'>Adoption Zone</Link>
-                <Link onClick={props.handleLogout}>Logout</Link>
+                <a href='#' onClick={props.handleLogout}>Logout</a>
             </StyledHeader>
 
             <div className='detail-contain'>
@@ -46,9 +51,11 @@ export default function PetDetail(props) {
                 }
 
                 <div className='detail-buttons'>
-                    {/* <Link to={`/user/${props.currentUser.id}/pet/${}/edit`}> */}
-                    <StyledButton>Edit</StyledButton>
-                    {/* </Link> */}
+                    {props.currentUser &&
+                        <Link to={`/user/${props.currentUser.id}/pet/${petId}/edit`}>
+                            <StyledButton>Edit</StyledButton>
+                        </Link>
+                    }
                     <Link to={`/`}>
                         <StyledButton onClick={handleDelete}>Release</StyledButton>
                     </Link>

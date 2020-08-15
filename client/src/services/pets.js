@@ -24,8 +24,3 @@ export const destroyPet = async (id) => {
   const resp = await api.delete(`/pets/${id}`);
   return resp;
 }
-
-// export const addFlavor = async(flavorId, foodId) => {
-//   const resp = await api.put(`/flavors/${flavorId}/foods/${foodId}`);
-//   return resp.data;
-// }

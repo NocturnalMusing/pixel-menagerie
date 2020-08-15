@@ -12,10 +12,14 @@ export default function UserPage(props) {
 
     const [allPets, setAllPets] = useState([])
 
-    useEffect(async () => {
+    useEffect(() => {
+        getAllPets()
+    }, [])
+
+    const getAllPets = async () => {
         let list = await readAllPets()
         setAllPets(list)
-    }, [])
+    }
 
     return (
         <>

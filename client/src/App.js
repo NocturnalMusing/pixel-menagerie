@@ -79,7 +79,8 @@ function App() {
       )} />
       <Route exact path='/user/:user_id/pet/:id/edit' render={(props) => (
         <PetEdit 
-        {...props} />
+        {...props}
+        currentUser={currentUser} />
       )} />
     </>
   );
