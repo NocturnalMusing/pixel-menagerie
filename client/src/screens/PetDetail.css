@@ -3,13 +3,13 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
-.pet-detail-contain {
+.detail-contain {
     width: 50%;
     margin: 0 auto;
     padding-top: 15%;
 }
 
-.pet-detail-image {
+.detail-image {
     display: block;
     margin: auto;
     padding-bottom: 20px;
@@ -18,4 +18,14 @@
 .detail-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
+}
+
+.detail-about {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.detail-buttons {
+    float: right;
+    padding-top: 50px;
 }
