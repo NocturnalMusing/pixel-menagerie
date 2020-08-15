@@ -39,7 +39,7 @@ export default function PetDetail(props) {
             <div className='pet-detail-contain'>
                 {onePet &&
                     <div>
-                        <FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
+                        <FontAwesomeIcon icon={`${onePet.image}`} className='pet-detail-image' size='10x' />
                         <h3 className='detail-name'>{onePet.name}</h3>
                         <p>{onePet.about}</p>
                     </div>

@@ -9,6 +9,12 @@
     padding-top: 15%;
 }
 
+.pet-detail-image {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 .detail-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
