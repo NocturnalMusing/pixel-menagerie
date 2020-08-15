@@ -24,9 +24,11 @@
 .species-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
+    color: #2D657F;
 }
 
 .species-pet {
     margin: 0px 35px 20px 35px;
     padding-bottom: 5%;
+    color: #1B4965;
 }
