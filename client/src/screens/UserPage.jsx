@@ -27,7 +27,7 @@ export default function UserPage(props) {
 
             {props.currentUser &&
                 <>
-                    <h1>Welcome back, {props.currentUser.username}!</h1>
+                    <h1 className='user-welcome'>Welcome back, {props.currentUser.username}!</h1>
 
 
                     <div className='pets-list'>

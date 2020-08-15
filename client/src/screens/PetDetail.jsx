@@ -36,21 +36,22 @@ export default function PetDetail(props) {
                 <Link onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            {onePet &&
-                <>
-                    < FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
-                    <h3 className='detail-name'>{onePet.name}</h3>
-                    <p>{onePet.about}</p>
-                </>
-            }
-            
-            {/* <Link to={`/user/${props.currentUser.id}/pet/${}/edit`}> */}
-            <StyledButton>Edit</StyledButton>
-            {/* </Link> */}
+            <div className='pet-detail-contain'>
+                {onePet &&
+                    <div>
+                        <FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
+                        <h3 className='detail-name'>{onePet.name}</h3>
+                        <p>{onePet.about}</p>
+                    </div>
+                }
 
-            <Link to={`/`}>
-            <StyledButton onClick={handleDelete}>Release</StyledButton>
-            </Link>
+                {/* <Link to={`/user/${props.currentUser.id}/pet/${}/edit`}> */}
+                <StyledButton>Edit</StyledButton>
+                {/* </Link> */}
+                <Link to={`/`}>
+                    <StyledButton onClick={handleDelete}>Release</StyledButton>
+                </Link>
+            </div>
 
             <Footer />
         </>

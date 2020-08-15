@@ -3,6 +3,12 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
+.pet-detail-contain {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 15%;
+}
+
 .detail-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;

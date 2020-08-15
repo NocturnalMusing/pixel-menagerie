@@ -51,7 +51,7 @@ export default function PetDetail(props) {
 
             {onePet &&
                 <>
-                    < FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
+                    <FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
                     <form>
                         <input type='text' name='name'
                         value={formData.name}
