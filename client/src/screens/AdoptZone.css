@@ -21,6 +21,12 @@
     padding-bottom: 8%;
 }
 
+.species-container header h3 {
+    color: #3F8098;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
 .species-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
