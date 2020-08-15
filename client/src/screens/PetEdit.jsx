@@ -17,10 +17,15 @@ export default function PetEdit(props) {
 
     const petId = props.match.params.id
 
-    useEffect(async () => {
+    useEffect(() => {
+        getOnePet()
+    }, [])
+    // If you need an async function, make one outside of your useeffect and call it inside
+
+    const getOnePet = async () => {
         let current = await readOnePet(petId)
         setOnePet(current)
-    }, [])
+    }
 
     const handleDelete = () => {
         destroyPet(petId)
