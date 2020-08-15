@@ -1,0 +1,35 @@
+@font-face {
+    font-family: bulkyPixels;
+    src: url(../assets/BULKYPIX.TTF);
+}
+
+.user-welcome {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10%;
+    font-size: 50px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.pets-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.pet-single {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.user-page-pet-name {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

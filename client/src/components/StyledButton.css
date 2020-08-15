@@ -1,0 +1,20 @@
+@font-face {
+    font-family: bulkyPixels;
+    src: url(../assets/BULKYPIX.TTF);
+}
+
+.button {
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    border-style: none;
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #2D657F;
+    background-color: #3CA2B9;
+}
+
+.button:focus {
+    outline: none;
+    color: #7BC6D3;
+    /* adjust width and height when clicked after deciding on button params */
+}

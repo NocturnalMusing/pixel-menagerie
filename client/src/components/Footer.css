@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 100%;
+    position: fixed; 
+    /* Remove position if you feel like fenagaling how to get it to just stay on the bottom of the page :/ */
+    bottom: 0px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    height: 55px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.site-credit {
+    align-self: flex-end;
+    margin-bottom: 2px;
+}
+
+.footer a {
+    text-decoration: none;
+    padding-right: 3px;
+}
+
+/* .footer a:hover {
+    color: rgb(217, 207, 247);
+} */
+
+.footer p {
+    padding-right: 20px;
+}

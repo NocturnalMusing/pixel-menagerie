@@ -1,0 +1,22 @@
+.header {
+    height: 50px;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    background-color: #3CA2B9;
+    border-radius: 0px 0px 25px 25px;
+    /* border-radius goes top-left, top-right, bottom-right, bottom-left  */
+    margin: 0 auto;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header input {
+    border-radius: 5px;
+    border-style: none;
+}
