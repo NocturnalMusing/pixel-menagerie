@@ -1,0 +1,40 @@
+@font-face {
+    font-family: bulkyPixels;
+    src: url(../assets/BULKYPIX.TTF);
+}
+
+.adopt-zone {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    color: #2D657F;
+}
+
+.species-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.species-container header {
+    text-align: center;
+    padding-top: 10%;
+    line-height: .5;
+    padding-bottom: 8%;
+}
+
+.species-container header h3 {
+    color: #3F8098;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.species-name {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: #2D657F;
+}
+
+.species-pet {
+    margin: 0px 35px 20px 35px;
+    padding-bottom: 5%;
+    color: #1B4965;
+}
