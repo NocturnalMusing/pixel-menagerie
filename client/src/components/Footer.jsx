@@ -5,11 +5,15 @@ export default class Footer extends Component {
     render() {
         return (
             <div className='footer'>
+                <div>
                 <p>
-                    <a href='/'>
-                    Icons by Font Awesome</a>
+                    Icons by <a href='/'>Font Awesome</a>
                 </p>
-                <p>site by <a href='/'>
+                <p>
+                    BulkyPixels font by <a href='http://www.smokingdrum.com.'>John Bloor</a>
+                </p>
+                </div>
+                <p className='site-credit'>site by <a href='/'>
                     NocturnalMusing</a> 
                 </p>
             </div>

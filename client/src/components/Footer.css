@@ -10,7 +10,12 @@
     padding-left: 10px;
     padding-bottom: 5px;
     padding-top: 100px;
-    height: 25px;
+    height: 55px;
+}
+
+.site-credit {
+    align-self: flex-end;
+    margin-bottom: 2px;
 }
 
 .footer a {
