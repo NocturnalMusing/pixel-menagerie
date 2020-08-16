@@ -18,3 +18,31 @@
     text-align: center;
     color: #2D657F;
 }
+
+.login-form {
+    margin-left: 25px;
+}
+
+.login-form label {
+    color: #2D657F;
+    margin-right: 5px;
+}
+
+.login-form input {
+    margin-left: 15px;
+    width: 180px;
+}
+
+.login-form ::placeholder {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.login-form button {
+    width: 100px;
+}
+
+.sign-up-click {
+    margin-right: 25px;
+}
