@@ -3,6 +3,22 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
+.pet-home-user-adopt {
+    margin-left: 25px;
+}
+
+.pet-home {
+    margin-right: 55px;
+}
+
+.pet-adopt-zone {
+    margin-left: 55px;
+}
+
+.pet-logout {
+    margin-right: 25px;
+}
+
 .detail-contain {
     width: 50%;
     margin: 0 auto;

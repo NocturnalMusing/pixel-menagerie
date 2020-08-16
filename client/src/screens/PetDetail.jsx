@@ -26,21 +26,23 @@ export default function PetDetail(props) {
 
     const handleDelete = () => {
         destroyPet(petId)
-        props.setAllPets(props.allPets.filter( pet => pet.id !== parseInt(petId)))
+        props.setAllPets(props.allPets.filter(pet => pet.id !== parseInt(petId)))
         props.history.push(`/user/${props.currentUser.username}`)
     }
 
     return (
         <>
             <StyledHeader>
-                <Link to='/'>Home</Link>
-                {props.currentUser &&
-                    <Link to={`/user/${props.currentUser.username}`}>
-                        {props.currentUser.username}
-                    </Link>
-                }
-                <Link to='/pet/adoption-zone'>Adoption Zone</Link>
-                <a href='#' onClick={props.handleLogout}>Logout</a>
+                <div className='pet-home-user-adopt'>
+                    <Link className='pet-home' to='/'>Home</Link>
+                    {props.currentUser &&
+                        <Link to={`/user/${props.currentUser.username}`}>
+                            {props.currentUser.username}
+                        </Link>
+                    }
+                    <Link className='pet-adopt-zone' to='/pet/adoption-zone'>Adoption Zone</Link>
+                </div>
+                <a href='#' className='pet-logout' onClick={props.handleLogout}>Logout</a>
             </StyledHeader>
 
             <div className='detail-contain'>
