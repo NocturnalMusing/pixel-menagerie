@@ -3,6 +3,18 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
+.user-home-adopt {
+    margin-left: 25px;
+}
+
+.user-home {
+    margin-right: 55px;
+}
+
+.user-logout {
+    margin-right: 25px;
+}
+
 .user-welcome {
     display: flex;
     justify-content: center;
@@ -12,6 +24,15 @@
     font-size: 50px;
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
+    color: #3F8098;
+}
+
+.user-welcome strong {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #2D657F;
+    font-size: 45px;
+    margin-top: 12px;
+    padding-left: 5px;
 }
 
 .pets-list {
@@ -21,7 +42,7 @@
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .pet-single {
@@ -30,6 +51,11 @@
     padding: 35px;
 }
 
+.user-pet {
+    color: #1B4965;
+}
+
 .user-page-pet-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #3F8098;
 }
