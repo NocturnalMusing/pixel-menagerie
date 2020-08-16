@@ -13,11 +13,13 @@
     display: block;
     margin: auto;
     padding-bottom: 20px;
+    color: #1B4965;
 }
 
 .detail-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
+    color: #2D657F;
 }
 
 .detail-about {
@@ -25,6 +27,7 @@
     margin: 0 auto;
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
+    color: #3F8098;
 }
 
 .detail-buttons {
