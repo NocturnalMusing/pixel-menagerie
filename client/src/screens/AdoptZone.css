@@ -3,6 +3,18 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
+.adopt-home-user {
+    margin-left: 25px;
+}
+
+.adopt-home {
+    margin-right: 55px;
+}
+
+.adopt-logout {
+    margin-right: 25px;
+}
+
 .adopt-zone {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 55px;
