@@ -17,13 +17,15 @@ export default function AdoptZone(props) {
     return (
         <>
             <StyledHeader>
-                <Link to='/'>Home</Link>
-                {props.currentUser &&
-                    <Link to={`/user/${props.currentUser.username}`}>
-                        {props.currentUser.username}
-                    </Link>
-                }
-                <Link onClick={props.handleLogout}>Logout</Link>
+                <div className='adopt-home-user'>
+                    <Link className='adopt-home' to='/'>Home</Link>
+                    {props.currentUser &&
+                        <Link to={`/user/${props.currentUser.username}`}>
+                            {props.currentUser.username}
+                        </Link>
+                    }
+                </div>
+                <Link className='adopt-logout' onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
             <div className='species-container'>
                 <header>
