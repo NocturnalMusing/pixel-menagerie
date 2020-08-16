@@ -1,4 +1,3 @@
-/* Style Login Button*/
 @font-face {
     font-family: bulkyPixels;
     src: url(../assets/BULKYPIX.TTF);
@@ -31,6 +30,11 @@
 .login-form input {
     margin-left: 15px;
     width: 180px;
+}
+
+.login-form input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #fff;
 }
 
 .login-form ::placeholder {
