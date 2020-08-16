@@ -3,17 +3,23 @@
     width: 98%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #3CA2B9;
     border-radius: 0px 0px 25px 25px;
     /* border-radius goes top-left, top-right, bottom-right, bottom-left  */
     margin: 0 auto;
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .header a {
     text-decoration: none;
+    color: #2D657F;
+}
+
+.header a:focus {
+    color: #7BC6D3;
 }
 
 .header input {

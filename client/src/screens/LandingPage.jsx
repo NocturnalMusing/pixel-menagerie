@@ -31,7 +31,7 @@ export default function LandingPage(props) {
     return (
         <>
             <StyledHeader>
-                <form onSubmit={handleSubmit}>
+                <form className='login-form' onSubmit={handleSubmit}>
                     <label for='login'>Login</label>
                     <input type='text' name='username' value={loginData.username}
                         onChange={handleChange} placeholder='Username' />
@@ -39,7 +39,7 @@ export default function LandingPage(props) {
                         onChange={handleChange} placeholder='Password' />
                     <StyledButton>Submit</StyledButton>
                 </form>
-                <Link to='/signup'>
+                <Link className='sign-up-click' to='/signup'>
                     Sign Up
                 </Link>
             </StyledHeader>
