@@ -1,1 +1,46 @@
+.edit-form {
+    display: flex;
+    flex-direction: column;
+}
 
+.edit-form input {
+    border-style: none;
+    border-radius: 8px;
+}
+
+.edit-form input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #fff;
+}
+
+.edit-name {
+    font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    width: 300px;
+    height: 35px;
+    color: #2D657F;
+    margin-bottom: 5%;
+    padding-left: 10px;
+}
+
+.edit-about {
+    height: 150px;
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: #3F8098;
+    padding: 10px;
+}
+
+textarea {
+    border-style: none;
+    outline: none;
+    resize: none;
+    border-radius: 8px;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #fff;
+}

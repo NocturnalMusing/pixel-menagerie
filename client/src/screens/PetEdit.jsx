@@ -6,6 +6,7 @@ import StyledButton from '../components/StyledButton'
 import Footer from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { readOnePet, destroyPet, putPet } from '../services/pets'
+import './PetEdit.css'
 
 export default function PetEdit(props) {
 
@@ -44,40 +45,48 @@ export default function PetEdit(props) {
     return (
         <>
             <StyledHeader>
-                <Link to='/'>Home</Link>
-                {props.currentUser &&
-                    <Link to={`/user/${props.currentUser.username}`}>
-                        {props.currentUser.username}
-                    </Link>
-                }
-                <Link to='/pet/adoption-zone'>Adoption Zone</Link>
-                <Link onClick={props.handleLogout}>Logout</Link>
+                <div className='pet-home-user-adopt'>
+                    <Link className='pet-home' to='/'>Home</Link>
+                    {props.currentUser &&
+                        <Link to={`/user/${props.currentUser.username}`}>
+                            {props.currentUser.username}
+                        </Link>
+                    }
+                    <Link className='pet-adopt-zone' to='/pet/adoption-zone'>Adoption Zone</Link>
+                </div>
+                <Link className='pet-logout' onClick={props.handleLogout}>Logout</Link>
             </StyledHeader>
 
-            {onePet &&
-                <>
-                    <FontAwesomeIcon icon={`${onePet.image}`} size='10x' />
-                    <form>
-                        <input type='text' name='name'
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder='Name'>
-                        </input>
+            <div className='detail-contain'>
+                {onePet &&
+                    <>
+                        <FontAwesomeIcon icon={`${onePet.image}`} className='detail-image' size='10x' />
+                        <form className='edit-form'>
+                            <input type='text' name='name'
+                                className='edit-name'
+                                value={formData.name}
+                                onChange={handleChange}
+                                placeholder='Name'>
+                            </input>
 
-                        <input type='text' name='about'
-                            value={formData.about}
-                            onChange={handleChange}
-                            placeholder='Tell us about your pet...'>
-                        </input>
-                    </form>
-                </>
-            }
+                            <textarea type='text' name='about'
+                                className='edit-about'
+                                value={formData.about}
+                                onChange={handleChange}
+                                placeholder='Tell us about your pet...'>
+                            </textarea>
+                        </form>
+                    </>
+                }
 
-            <StyledButton onClick={handleSave}>Save</StyledButton>
+                <div className='detail-buttons'>
+                    <StyledButton onClick={handleSave}>Save</StyledButton>
 
-            <Link to={`/`}>
-                <StyledButton onClick={handleDelete}>Release</StyledButton>
-            </Link>
+                    <Link to={`/`}>
+                        <StyledButton onClick={handleDelete}>Release</StyledButton>
+                    </Link>
+                </div>
+            </div>
 
             <Footer />
         </>

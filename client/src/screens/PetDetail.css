@@ -3,6 +3,22 @@
     src: url(../assets/BULKYPIX.TTF);
 }
 
+.pet-home-user-adopt {
+    margin-left: 25px;
+}
+
+.pet-home {
+    margin-right: 55px;
+}
+
+.pet-adopt-zone {
+    margin-left: 55px;
+}
+
+.pet-logout {
+    margin-right: 25px;
+}
+
 .detail-contain {
     width: 50%;
     margin: 0 auto;
@@ -13,11 +29,13 @@
     display: block;
     margin: auto;
     padding-bottom: 20px;
+    color: #1B4965;
 }
 
 .detail-name {
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
+    color: #2D657F;
 }
 
 .detail-about {
@@ -25,6 +43,7 @@
     margin: 0 auto;
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
+    color: #3F8098;
 }
 
 .detail-buttons {
