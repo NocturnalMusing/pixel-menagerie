@@ -123,20 +123,21 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create BE Tables |    H     |     3 hrs      |     3 hrs     |     3hrs     |
 | Create Authentication Actions |    H     |     1 hrs      |     1hrs     |     1hrs     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     1hrs     |
+| Create CRUD Actions |    H     |     3 hrs      |     2 hrs     |     2hrs     |
 | Create Needed Screens |    H     |     1 hrs      |     30 mins     |     30mins     |
 | Create Header, Footer, & Button Components |    H     |     1 hrs      |     45mins     |     45mins     |
 | Create SignUp Component |    H     |     1 hrs      |     1 hrs     |     1hrs     |
 | Create PetSpecies file |    H     |     1 hrs      |     20 mins     |     20mins     |
-| Populate Landing Scren |    H     |     1 hrs      |     20 mins     |     20mins     |
+| Populate Landing Screen |    H     |     1 hrs      |     20 mins     |     20mins     |
 | Populate Sign Up Screen |    H     |     1hrs      |     1 hrs     |     1hrs     |
 | Populate Adopt Screen |    H     |     3 hrs      |     1.5 hrs     |     1.5hrs     |
 | Populate User Screen |    H     |     1 hrs      |     1 hrs     |     1hrs     |
-| Create PetDetail and PetEdit Screens |    H     |     3 hrs      |     TBD     |     TBD     |
-| Desktop Styling |    H     |     3 hrs      |     TBD     |     TBD     |
+| Create PetDetail and PetEdit Screens |    H     |     3 hrs      |     2.5hrs     |     2.5hrs     |
+| Desktop Styling |    H     |     3 hrs      |     3hrs     |     3hrs     |
 | Tablet Styling |    H     |     3 hrs      |     TBD     |     TBD     |
 | Mobile Styling |    H     |     3 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     29 hrs      |     13.5 hrs     |     TBD     |
+| Debugging |     H     |     3 hrs      |     3hrs     |     3hrs     |
+| TOTAL               |          |     32 hrs      |     ~ 21 hrs     |     TBD     |
 
 <br>
 
