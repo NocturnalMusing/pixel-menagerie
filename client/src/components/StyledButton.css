@@ -8,6 +8,7 @@
     width: 150px;
     height: 35px;
     border-style: none;
+    border-radius: 8px;
     font-family: bulkyPixels, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #2D657F;
     background-color: #3CA2B9;
