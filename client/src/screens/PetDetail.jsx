@@ -26,7 +26,6 @@ export default function PetDetail(props) {
 
     const handleDelete = () => {
         destroyPet(petId)
-        // debugger
         props.setAllPets(props.allPets.filter( pet => pet.id !== parseInt(petId)))
         props.history.push(`/user/${props.currentUser.username}`)
     }
