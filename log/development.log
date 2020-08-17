@@ -13102,3 +13102,181 @@ Processing by PetsController#index as HTML
 Completed 200 OK in 15ms (Views: 3.3ms | ActiveRecord: 11.4ms | Allocations: 1004)
 
 
+Started POST "/auth/login" for ::1 at 2020-08-17 10:03:32 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"nacht", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "nacht"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 348ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 1155)
+
+
+Started POST "/pets" for ::1 at 2020-08-17 10:03:40 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"pet"=>{"name"=>"Dragon", "image"=>"dragon", "about"=>"Oh my god dude you brought home a dragon oh my god that's so sick dude can I pet your dragon bro please bro this is so cool", "species_id"=>23}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `authorize_request'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[36mSpecies Load (12.8ms)[0m  [1m[34mSELECT "species".* FROM "species" WHERE "species"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[36mPet Create (6.1ms)[0m  [1m[32mINSERT INTO "pets" ("name", "image", "about", "user_id", "created_at", "updated_at", "species_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dragon"], ["image", "dragon"], ["about", "Oh my god dude you brought home a dragon oh my god that's so sick dude can I pet your dragon bro please bro this is so cool"], ["user_id", 5], ["created_at", "2020-08-17 14:03:40.726960"], ["updated_at", "2020-08-17 14:03:40.726960"], ["species_id", 23]]
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+Completed 201 Created in 68ms (Views: 1.0ms | ActiveRecord: 27.4ms | Allocations: 10837)
+
+
+Started GET "/pets/31" for ::1 at 2020-08-17 10:03:40 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 920)
+
+
+Started POST "/pets" for ::1 at 2020-08-17 10:03:45 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"pet"=>{"name"=>"Spider", "image"=>"spider", "about"=>"You start humming a spider related theme song. The spider hums along. Pretty soon, it whips up a pretty sic guitar to strum along with your humming. Now you're in a band. With a spider. That's pretty cool.", "species_id"=>22}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `authorize_request'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[36mSpecies Load (0.4ms)[0m  [1m[34mSELECT "species".* FROM "species" WHERE "species"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "image", "about", "user_id", "created_at", "updated_at", "species_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Spider"], ["image", "spider"], ["about", "You start humming a spider related theme song. The spider hums along. Pretty soon, it whips up a pretty sic guitar to strum along with your humming. Now you're in a band. With a spider. That's pretty cool."], ["user_id", 5], ["created_at", "2020-08-17 14:03:45.617394"], ["updated_at", "2020-08-17 14:03:45.617394"], ["species_id", 22]]
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+Completed 201 Created in 21ms (Views: 0.6ms | ActiveRecord: 10.5ms | Allocations: 4645)
+
+
+Started GET "/pets/32" for ::1 at 2020-08-17 10:03:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 809)
+
+
+Started GET "/pets" for ::1 at 2020-08-17 10:03:58 -0400
+Started GET "/auth/verify" for ::1 at 2020-08-17 10:03:58 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (28.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:9:in `index'
+Completed 200 OK in 32ms (Views: 3.9ms | ActiveRecord: 28.2ms | Allocations: 1296)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 874)
+
+
+Started GET "/pets/31" for ::1 at 2020-08-17 10:05:42 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.9ms | Allocations: 812)
+
+
+Started GET "/pets/32" for ::1 at 2020-08-17 10:06:10 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.6ms | Allocations: 809)
+
+
+Started POST "/auth/login" for ::1 at 2020-08-17 10:52:12 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authentication"=>{"username"=>"admin", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "admin"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 346ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 1091)
+
+
+Started GET "/pets/27" for ::1 at 2020-08-17 10:53:04 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 1.0ms | Allocations: 812)
+
+
+Started POST "/pets" for ::1 at 2020-08-17 10:53:11 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"pet"=>{"name"=>"Dove", "image"=>"dove", "about"=>"Ah, the bird of love. Did you know doves are total snobs about their feathers? It's true. Just ask this one; no one's wings can be that pristine.", "species_id"=>20}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `authorize_request'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[36mSpecies Load (0.5ms)[0m  [1m[34mSELECT "species".* FROM "species" WHERE "species"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[36mPet Create (1.2ms)[0m  [1m[32mINSERT INTO "pets" ("name", "image", "about", "user_id", "created_at", "updated_at", "species_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Dove"], ["image", "dove"], ["about", "Ah, the bird of love. Did you know doves are total snobs about their feathers? It's true. Just ask this one; no one's wings can be that pristine."], ["user_id", 4], ["created_at", "2020-08-17 14:53:11.050769"], ["updated_at", "2020-08-17 14:53:11.050769"], ["species_id", 20]]
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pets_controller.rb:22:in `create'
+Completed 201 Created in 21ms (Views: 0.6ms | ActiveRecord: 9.7ms | Allocations: 4650)
+
+
+Started GET "/pets/33" for ::1 at 2020-08-17 10:53:11 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 809)
+
+
+Started GET "/pets/33" for ::1 at 2020-08-17 10:53:23 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 809)
+
+
+Started PUT "/pets/33" for ::1 at 2020-08-17 10:53:33 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"pet"=>{"name"=>"Pebble", "about"=>"Beoebeo"}, "id"=>"33"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `authorize_request'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:31:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pets_controller.rb:31:in `update'
+  [1m[36mSpecies Load (0.4ms)[0m  [1m[34mSELECT "species".* FROM "species" WHERE "species"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:31:in `update'
+  [1m[36mPet Update (0.6ms)[0m  [1m[33mUPDATE "pets" SET "name" = $1, "about" = $2, "updated_at" = $3 WHERE "pets"."id" = $4[0m  [["name", "Pebble"], ["about", "Beoebeo"], ["updated_at", "2020-08-17 14:53:33.387247"], ["id", 33]]
+  ↳ app/controllers/pets_controller.rb:31:in `update'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pets_controller.rb:31:in `update'
+Completed 200 OK in 19ms (Views: 0.4ms | ActiveRecord: 2.8ms | Allocations: 6486)
+
+
+Started GET "/pets/33" for ::1 at 2020-08-17 10:53:33 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 808)
+
+
+Started DELETE "/pets/33" for ::1 at 2020-08-17 10:53:38 -0400
+Processing by PetsController#destroy as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (2.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:46:in `set_pet'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `authorize_request'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/pets_controller.rb:40:in `destroy'
+  [1m[36mPet Destroy (0.5ms)[0m  [1m[31mDELETE FROM "pets" WHERE "pets"."id" = $1[0m  [["id", 33]]
+  ↳ app/controllers/pets_controller.rb:40:in `destroy'
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/pets_controller.rb:40:in `destroy'
+Completed 204 No Content in 18ms (ActiveRecord: 8.7ms | Allocations: 3205)
+
+

@@ -155,6 +155,7 @@ src
 
 ## Post-MVP
 
+- Adjust Landing Page header for when someone is logged in.
 - Add a pop-up on the 'release' button explaining you're about to return your pet to the wild and asking for confirmation.
 - Add one to two line 'descriptions' for the pets in the Pets Table. Example; _"You're pretty sure it's a normal cat, but it's hard to tell. Oh well, it probably likes fish anyway."_
 - Add a delete user button
