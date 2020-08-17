@@ -13280,3 +13280,24 @@ Processing by PetsController#destroy as HTML
 Completed 204 No Content in 18ms (ActiveRecord: 8.7ms | Allocations: 3205)
 
 
+Started GET "/pets" for ::1 at 2020-08-17 11:21:05 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (7.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 4.4ms | ActiveRecord: 7.6ms | Allocations: 1354)
+
+
+Started GET "/pets" for ::1 at 2020-08-17 11:22:15 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.8ms | Allocations: 1296)
+
+
+Started GET "/pets" for ::1 at 2020-08-17 11:23:24 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 1296)
+
+
