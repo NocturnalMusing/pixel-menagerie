@@ -62,3 +62,10 @@
 
 /***** MEDIA QUERIES *****/
 
+@media all and (max-width: 768px) {
+    .user-welcome {
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+}
