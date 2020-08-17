@@ -96,4 +96,21 @@
     .footer {
         display: none;
     }
+
+    .signup-container {
+        width: 85%;
+        padding-top: 0;
+    }
+
+    .signup-section p {
+        font-size: 20px;
+    }
+
+    .signup-section h2 {
+        padding-top: 0px;
+    }
+
+    .signup-form {
+        margin-top: -20px;
+    }
 }
