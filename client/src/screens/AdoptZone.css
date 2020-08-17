@@ -73,3 +73,9 @@
         font-size: 35px;
     }
 }
+
+@media all and (max-width: 375px) {
+    .species-container h1 {
+        font-size: 32px;
+    }
+}
