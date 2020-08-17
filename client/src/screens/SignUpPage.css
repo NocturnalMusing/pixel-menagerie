@@ -114,3 +114,21 @@
         margin-top: -20px;
     }
 }
+
+@media all and (max-width: 375px) {
+    .signup-section p, strong {
+        font-size: 20px;
+    }
+    
+    .signup-section h2 {
+        font-size: 30px;
+    }
+
+    .signup-form input {
+        margin: 10px 0px 10px 35px;
+    }
+
+    .signup-form button {
+        margin-bottom: 25px;
+    }
+}
