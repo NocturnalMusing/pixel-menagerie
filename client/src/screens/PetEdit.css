@@ -44,3 +44,13 @@ textarea:focus {
     outline: none;
     box-shadow: 0 0 8px #fff;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 414px) {
+    .edit-name {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
