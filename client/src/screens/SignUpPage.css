@@ -79,3 +79,13 @@
 
 /***** MEDIA QUERIES *****/
 
+@media all and (max-width: 768px) {
+    .signup-container {
+        padding-top: 15%;
+        width: 80%;
+    }
+
+    .signup-section {
+        width: 90%;
+    }
+}

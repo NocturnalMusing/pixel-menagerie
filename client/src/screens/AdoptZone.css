@@ -53,3 +53,8 @@
 
 /***** MEDIA QUERIES *****/
 
+@media all and (max-width: 768px) {
+    .species-container {
+        width: 80%;
+    }
+}
