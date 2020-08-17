@@ -79,6 +79,7 @@
 
 /***** MEDIA QUERIES *****/
 
+/* TABLET */
 @media all and (max-width: 768px) {
     .signup-container {
         padding-top: 15%;
@@ -87,5 +88,12 @@
 
     .signup-section {
         width: 90%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width: 414px) {
+    .footer {
+        display: none;
     }
 }

@@ -26,3 +26,12 @@
     border-radius: 5px;
     border-style: none;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 414px) {
+    .header {
+        width: 100%;
+        height: 100px;
+    }
+}
