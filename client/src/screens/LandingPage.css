@@ -59,19 +59,28 @@
         font-size: 50px;
     }
 
+    /* .login-form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+
     .login-form label {
         display: none;
     }
 
     .login-form input {
-        margin: 5px;
-        width: 180px;
-        display: flex;
-        flex-direction: column;
+        height: 20px;
+        margin: 0 auto;
     }
 
     .login-form button {
-        width: 200px;
-        margin-left: 50px;
+        margin: 0 auto;
+        padding-top: 20px;
+        font-size: 25px;
     }
+
+    .sign-up-click {
+        display: none;
+    } */
 }
