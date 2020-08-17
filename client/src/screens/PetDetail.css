@@ -54,3 +54,29 @@
 .detail-buttons button {
     margin: 20px;
 }
+
+/***** MEDIA QUERIES *****/
+
+@media all and (max-width: 414px) {
+    .detail-contain {
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .detail-name {
+        font-size: 25px;
+    }
+
+    .detail-about {
+        width: 95%;
+    }
+
+    .detail-buttons {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .detail-buttons button {
+        margin: 5px;
+    }
+}

@@ -58,3 +58,24 @@
         width: 80%;
     }
 }
+
+@media all and (max-width: 414px) {
+    .species-container {
+        width: 90%;
+        text-align: center;
+    }
+
+    .species-container h3 {
+        line-height: 1;
+    }
+
+    .adopt-zone {
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .species-container h1 {
+        font-size: 32px;
+    }
+}

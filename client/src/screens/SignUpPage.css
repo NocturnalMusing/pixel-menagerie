@@ -79,6 +79,7 @@
 
 /***** MEDIA QUERIES *****/
 
+/* TABLET */
 @media all and (max-width: 768px) {
     .signup-container {
         padding-top: 15%;
@@ -87,5 +88,47 @@
 
     .signup-section {
         width: 90%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width: 414px) {
+    .footer {
+        display: none;
+    }
+
+    .signup-container {
+        width: 85%;
+        padding-top: 0;
+    }
+
+    .signup-section p {
+        font-size: 20px;
+    }
+
+    .signup-section h2 {
+        padding-top: 0px;
+    }
+
+    .signup-form {
+        margin-top: -20px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .signup-section p, strong {
+        font-size: 20px;
+    }
+    
+    .signup-section h2 {
+        font-size: 30px;
+    }
+
+    .signup-form input {
+        margin: 10px 0px 10px 35px;
+    }
+
+    .signup-form button {
+        margin-bottom: 25px;
     }
 }
