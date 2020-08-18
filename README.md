@@ -168,8 +168,33 @@ src
 
 ## Code Showcase
 
-- TBA
+```
+    useEffect(() => {
+        getOnePet()
+    }, [])
+    // If you need an async function, make one outside of your useeffect and call it inside
+
+    const getOnePet = async () => {
+        let current = await readOnePet(petId)
+        setOnePet(current)
+    }
+
+    const handleDelete = () => {
+        destroyPet(petId)
+    }
+
+    const handleChange = (e) => {
+        const { name, value } = e.target
+        setFormData({ ...formData, [name]: value })
+    }
+
+    const handleSave = async () => {
+        const updatePet = await putPet(petId, formData)
+        props.history.push(`/user/${props.currentUser.id}/pet/${petId}`)
+    }
+```
 
 ## Code Issues & Resolutions
 
-- TBA
+- See closed issue tickets.
+- Footer interferes with 'submit' button on SignUp screen. Solution; add a z-index of -1 to the Footer component.
