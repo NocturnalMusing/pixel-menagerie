@@ -147,8 +147,6 @@ src
 
 ![ERD](https://res.cloudinary.com/nocturnalmusing/image/upload/v1597003468/Pixel%20Menagerie/pixel_menagerie_ERD_iawevq.png)
 
-- There is a join table here that I forgot to implement on this ERD.
-
 <br>
 
 ***
