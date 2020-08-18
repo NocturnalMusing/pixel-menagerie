@@ -134,10 +134,10 @@ src
 | Populate User Screen |    H     |     1 hrs      |     1 hrs     |     1hrs     |
 | Create PetDetail and PetEdit Screens |    H     |     3 hrs      |     2.5hrs     |     2.5hrs     |
 | Desktop Styling |    H     |     3 hrs      |     3hrs     |     3hrs     |
-| Tablet Styling |    H     |     3 hrs      |     TBD     |     TBD     |
-| Mobile Styling |    H     |     3 hrs      |     TBD     |     TBD     |
+| Tablet Styling |    H     |     3 hrs      |     1hrs     |     1hrs     |
+| Mobile Styling |    H     |     3 hrs      |     2hrs     |     2hrs     |
 | Debugging |     H     |     3 hrs      |     3hrs     |     3hrs     |
-| TOTAL               |          |     32 hrs      |     ~ 21 hrs     |     TBD     |
+| TOTAL               |          |     32 hrs      |     ~ 24 hrs     |     24 - 25hrs     |
 
 <br>
 
