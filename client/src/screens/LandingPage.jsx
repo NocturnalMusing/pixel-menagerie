@@ -31,19 +31,37 @@ export default function LandingPage(props) {
     return (
         <>
             <StyledHeader>
-                <form className='login-form' onSubmit={handleSubmit}>
-                    <label for='login'>Login</label>
-                    <input type='text' name='username' value={loginData.username}
-                        onChange={handleChange} placeholder='Username' />
-                    <input type='password' name='password' value={loginData.password}
-                        onChange={handleChange} placeholder='Password' />
-                    <StyledButton>Submit</StyledButton>
-                </form>
-                <Link className='sign-up-click' to='/signup'>
-                    Sign Up
-                </Link>
-            </StyledHeader>
-            
+                {
+                    props.currentUser ? (
+                        <>
+                            <div>
+                                <Link className='landing-username' to={`/user/${props.currentUser.username}`}>
+                                    {props.currentUser.username}
+                                </Link>
+                                <Link className='pet-adopt-zone' to='/pet/adoption-zone'>Adoption Zone</Link>
+                            </div>
+                            <a href='#' className='pet-logout' onClick={props.handleLogout}>Logout</a>
+                        </>
+
+                    ) : (
+                            <>
+                                <form className='login-form' onSubmit={handleSubmit}>
+                                    <label for='login'>Login</label>
+                                    <input type='text' name='username' value={loginData.username}
+                                        onChange={handleChange} placeholder='Username' />
+                                    <input type='password' name='password' value={loginData.password}
+                                        onChange={handleChange} placeholder='Password' />
+                                    <StyledButton>Submit</StyledButton>
+                                </form>
+                                <Link className='sign-up-click' to='/signup'>
+                                    Sign Up
+                                </Link>
+                            </>
+                        )
+                }
+
+            </StyledHeader >
+
             <div className='container'>
                 <h1 className='site-name'>PIXEL MENAGERIE</h1>
             </div>

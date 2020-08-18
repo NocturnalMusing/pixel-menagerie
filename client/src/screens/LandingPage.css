@@ -52,6 +52,10 @@
     margin-right: 25px;
 }
 
+.landing-username {
+    margin-left: 25px;
+}
+
 /***** MEDIA QUERIES *****/
 
 @media all and (max-width: 414px) {
