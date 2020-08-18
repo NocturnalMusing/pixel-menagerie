@@ -156,7 +156,7 @@ src
 ## Post-MVP
 
 - ~~Add one to two line 'descriptions' for the pets in the Pets Table. Example; _"You're pretty sure it's a normal cat, but it's hard to tell. Oh well, it probably likes fish anyway."_~~
-- Adjust Landing Page header for when someone is logged in.
+- ~~Adjust Landing Page header for when someone is logged in.~~
 - Add a pop-up on the 'release' button explaining you're about to return your pet to the wild and asking for confirmation.
 - Add a delete user button
 - Upon selecting a pet on the adoption page, a card appears with the description and a "take home?" button.

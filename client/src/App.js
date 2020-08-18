@@ -66,7 +66,8 @@ function App() {
         <LandingPage
           {...props}
           currentUser={currentUser}
-          setCurrentUser={setCurrentUser} />
+          setCurrentUser={setCurrentUser} 
+          handleLogout={handleLogout} />
       )} />
       <Route exact path='/signup' render={(props) => (
         <SignUpPage
